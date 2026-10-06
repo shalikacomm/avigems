@@ -35,7 +35,7 @@
   var DEST = "shali@pureavigems.com";
 
   function buildMailto(fields) {
-    var subject = "AviGems — quote request";
+    var subject = "Pure Avi Gems — quote request";
     var body =
       "Name: " + (fields.name || "") + "\n" +
       "Business: " + (fields.business || "") + "\n" +
