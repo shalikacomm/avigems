@@ -1156,6 +1156,42 @@ textarea {
 }
 
 
+
+.history-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2.25rem;
+  justify-items: center;
+}
+.history-videos figure {
+  margin: 0;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.history-videos video {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  display: block;
+  background: #0a0e18;
+  object-fit: contain;
+}
+.history-videos figcaption {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  padding: 0.65rem 0.75rem 0.85rem;
+  color: rgba(255,255,255,0.65);
+}
+@media (max-width: 800px) {
+  .history-videos { grid-template-columns: 1fr; }
+  .history-videos figure { max-width: 320px; }
+}
+
 .history-certs {
   display: grid;
   grid-template-columns: 1fr;
