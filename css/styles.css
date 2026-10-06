@@ -1117,3 +1117,40 @@ textarea {
   .spec dt { padding-bottom: 0.1rem; border-bottom: 0; }
   .spec dd { padding-top: 0.1rem; }
 }
+
+
+/* History page photo gallery */
+.history-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 2.25rem;
+}
+.history-gallery figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.history-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.history-gallery figcaption {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  padding: 0.65rem 0.75rem 0.85rem;
+  color: rgba(255,255,255,0.65);
+}
+.history-gallery figcaption a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (max-width: 800px) {
+  .history-gallery { grid-template-columns: 1fr; }
+  .history-gallery img { height: 220px; }
+}
