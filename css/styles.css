@@ -1154,3 +1154,54 @@ textarea {
   .history-gallery { grid-template-columns: 1fr; }
   .history-gallery img { height: 220px; }
 }
+
+
+.history-certs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+.history-certs figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.history-certs img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+  background: #0a0e18;
+}
+.history-certs figcaption,
+.history-gems figcaption {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  padding: 0.65rem 0.75rem 0.85rem;
+  color: rgba(255,255,255,0.65);
+}
+.history-gems {
+  display: grid;
+  grid-template-columns: minmax(0, 320px);
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+.history-gems figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.history-gems img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 900px) {
+  .history-certs { grid-template-columns: 1fr 1fr; }
+}
